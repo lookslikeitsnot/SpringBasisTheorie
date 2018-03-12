@@ -17,12 +17,12 @@ http://www.springframework.org/schema/beans/spring-beans.xsd'>
 	</bean>
 	<bean id='helpdeskMedewerkers' class='be.vdab.HelpdeskMedewerkers'>
 		<constructor-arg>
-			<map>
-				<entry key='Joe' value='123' />
-				<entry key='Jack' value='456' />
-				<entry key='William' value='789' />
-				<entry key='Averell' value='012' />
-			</map>
+			<props>
+				<prop key='Joe'>123</prop>
+				<prop key='Jack'>456</prop>
+				<prop key='William'>789</prop>
+				<prop key='Averell'>012</prop>
+			</props>
 		</constructor-arg>
 	</bean>
 </beans>
