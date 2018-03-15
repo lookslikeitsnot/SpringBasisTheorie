@@ -17,7 +17,9 @@ class Main {
 //			ClassB objectB = context.getBean(ClassB.class);
 //			System.out.println(objectB.getTelefoonNrHelpDesk());
 //			System.out.println(objectB.getAantalPogingenUpdateKlant());
-			System.out.println(context.getBean(HelpdeskMedewerkers.class));
+//			System.out.println(context.getBean(HelpdeskMedewerkers.class));
+//			System.out.println(context.getBean(ClassA.class).getWebMasterEMailAdres());
+			System.out.println(context.getBean(ClassA.class).getWebsiteGestart());
 		}
 	}
 }
