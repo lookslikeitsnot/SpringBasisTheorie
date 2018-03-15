@@ -19,7 +19,12 @@ class Main {
 //			System.out.println(objectB.getAantalPogingenUpdateKlant());
 //			System.out.println(context.getBean(HelpdeskMedewerkers.class));
 //			System.out.println(context.getBean(ClassA.class).getWebMasterEMailAdres());
-			System.out.println(context.getBean(ClassA.class).getWebsiteGestart());
+//			System.out.println(context.getBean(ClassA.class).getWebsiteGestart());
+			context.getBean("teller1", Teller.class).verhoog();
+			context.getBean("teller1", Teller.class).verhoog();
+			Teller teller2 = context.getBean("teller2", Teller.class);
+			teller2.verhoog();
+			context.getBean("teller2", Teller.class).verhoog();
 		}
 	}
 }
