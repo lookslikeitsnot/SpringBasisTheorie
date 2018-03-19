@@ -6,13 +6,13 @@
 						http://www.springframework.org/schema/beans/spring-beans.xsd
 						http://www.springframework.org/schema/context
 						http://www.springframework.org/schema/context/spring-context.xsd'>
-	<context:property-placeholder location='classpath:restclients.properties'/>
-	<bean id='fixerKoersenClient' class='be.vdab.restclients.FixerKoersenClient'>
+<!-- 	<context:property-placeholder location='classpath:restclients.properties'/> -->
+<!-- 	<bean id='fixerKoersenClient' class='be.vdab.restclients.FixerKoersenClient'> -->
 	
-		<constructor-arg value='${fixerKoersenURL}' />
-	</bean>
-	<bean id='ecbKoersenClient' class='be.vdab.restclients.ECBKoersenClient'>
-		<constructor-arg
-			value='${ecbKoersenURL}'/>
-	</bean>
+<!-- 		<constructor-arg value='${fixerKoersenURL}' /> -->
+<!-- 	</bean> -->
+<!-- 	<bean id='ecbKoersenClient' class='be.vdab.restclients.ECBKoersenClient'> -->
+<!-- 		<constructor-arg -->
+<!-- 			value='${ecbKoersenURL}'/> -->
+<!-- 	</bean> -->
 </beans>
