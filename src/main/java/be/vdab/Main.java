@@ -2,14 +2,17 @@ package be.vdab;
 
 import java.math.BigDecimal;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import be.vdab.restclients.RestClientsConfig;
 import be.vdab.services.EuroService;
+import be.vdab.services.ServicesConfig;
 
 class Main {
 	public static void main(String[] args) {
-		try (ClassPathXmlApplicationContext context = 
-				new ClassPathXmlApplicationContext("restclients.xml", "services.xml")) {
+		try (AnnotationConfigApplicationContext context =
+				new AnnotationConfigApplicationContext(
+				new Class[] {ServicesConfig.class, RestClientsConfig.class})) {
 //			System.out.println(context.getBean(ClassA.class).getBoodschap());
 //			System.out.println(context.getBean(InterfaceB.class).getBoodschap());
 //			System.out.println(context.getBean(ClassA.class).getTelefoonNrHelpDesk());
