@@ -9,7 +9,7 @@ import be.vdab.services.EuroService;
 class Main {
 	public static void main(String[] args) {
 		try (ClassPathXmlApplicationContext context = 
-				new ClassPathXmlApplicationContext("SpringXMLConfig.xml")) {
+				new ClassPathXmlApplicationContext("restclients.xml", "services.xml")) {
 //			System.out.println(context.getBean(ClassA.class).getBoodschap());
 //			System.out.println(context.getBean(InterfaceB.class).getBoodschap());
 //			System.out.println(context.getBean(ClassA.class).getTelefoonNrHelpDesk());
